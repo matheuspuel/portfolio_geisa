@@ -1,11 +1,19 @@
 import React from 'react';
 import './App.css';
-import {Main} from "containers";
+import {Main, Projeto} from "containers";
+import {BrowserRouter, Redirect} from "react-router-dom";
+import {Route, Switch} from "react-router";
 
 function App() {
   return (
     <div style={{marginLeft:'10px'}}>
-      <Main/>
+      <BrowserRouter>
+        <Switch>
+          <Route path='/' exact component={Main} />
+          <Route path='/projeto/' component={Projeto} />
+          <Redirect to='/' />
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }

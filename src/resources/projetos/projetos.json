@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "nome": "Prédio A",
+    "area": 800,
+    "andares": 4,
+    "apartamentos": 16
+  },
+  {
+    "id": 2,
+    "nome": "Casa B",
+    "area": 200,
+    "andares": 2,
+    "apartamentos": null
+  },
+  {
+    "id": 3,
+    "nome": "Casa C",
+    "area": 100,
+    "andares": 1,
+    "apartamentos": null
+  },
+  {
+    "id": 4,
+    "nome": "Casa D",
+    "area": 70,
+    "andares": null,
+    "apartamentos": null
+  }
+]

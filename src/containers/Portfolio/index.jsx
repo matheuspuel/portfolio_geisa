@@ -1,13 +1,13 @@
 import React from 'react';
 import Projeto from "./Projeto";
+import projetos from 'resources/projetos/projetos.json'
 
 function Portfolio(props) {
   return (
     <div>
-      <Projeto nome='Prédio A' area={800} andares={4} apartamentos={16}/>
-      <Projeto nome='Casa B' area={200} andares={2}/>
-      <Projeto nome='Casa C' area={100} andares={1}/>
-      <Projeto nome='Casa D' area={70}/>
+      {projetos.map(({id, nome, area, andares, apartamentos, imagem}) => {
+        return <Projeto key={id} id={id} nome={nome} area={area} andares={andares} apartamentos={apartamentos} imagem={imagem}/>
+      })}
     </div>
   );
 }
