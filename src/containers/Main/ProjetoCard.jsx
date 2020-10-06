@@ -9,7 +9,7 @@ import CardActions from "@material-ui/core/CardActions";
 import Button from "@material-ui/core/Button";
 import useStyles from "styles";
 
-function Projeto({id, nome, area, andares, apartamentos}) {
+function ProjetoCard({id, nome, area, andares, apartamentos}) {
   const classes = useStyles();
   const imagem = require(`assets/abertura_${id}.png`)
   return (
@@ -29,7 +29,7 @@ function Projeto({id, nome, area, andares, apartamentos}) {
           <Typography>{apartamentos && `${apartamentos} apartamentos`}</Typography>
         </CardContent>
         <CardActions>
-          <Button size="small" color="primary">
+          <Button size="small" color="primary" href={`/projeto/${id}`}>
             Ver
           </Button>
           <Button size="small" color="primary">
@@ -41,4 +41,4 @@ function Projeto({id, nome, area, andares, apartamentos}) {
   );
 }
 
-export default Projeto;
+export default ProjetoCard;

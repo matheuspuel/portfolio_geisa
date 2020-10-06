@@ -6,7 +6,7 @@ import {Route, Switch} from "react-router";
 
 function App() {
   return (
-    <div style={{marginLeft:'10px'}}>
+    <div>
       <BrowserRouter>
         <Switch>
           <Route path='/' exact component={Main} />
