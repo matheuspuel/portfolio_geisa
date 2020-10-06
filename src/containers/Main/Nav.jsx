@@ -1,12 +1,23 @@
 import React from 'react';
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import Typography from "@material-ui/core/Typography";
 
 function Nav(props) {
   return (
-    <div>
-      <span>Informações</span>
-      <span>Portfólio</span>
-      <span>Contato</span>
-    </div>
+    <AppBar position="relative">
+      <Toolbar>
+        <Typography variant="h6" color="inherit" noWrap>
+          Informações
+        </Typography>
+        <Typography variant="h6" color="inherit" noWrap>
+          Portfólio
+        </Typography>
+        <Typography variant="h6" color="inherit" noWrap>
+          Contato
+        </Typography>
+      </Toolbar>
+    </AppBar>
   );
 }
 
