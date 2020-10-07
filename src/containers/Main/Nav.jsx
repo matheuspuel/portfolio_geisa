@@ -3,7 +3,8 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import useStyles from "styles";
-import Link from '@material-ui/core/Link';
+import {Button} from "@material-ui/core";
+import {HashLink} from "react-router-hash-link";
 
 function Nav(props) {
   const classes = useStyles();
@@ -15,15 +16,15 @@ function Nav(props) {
             Eng. Civil Geisa Marques
           </Typography>
           <nav>
-            <Link variant="button" color="textPrimary" href="#informacoes" className={classes.link}>
-              Informações
-            </Link>
-            <Link variant="button" color="textPrimary" href="#portfolio" className={classes.link}>
+            <Button variant="button" color="textPrimary" component={HashLink} to={'/#'} className={classes.link}>
+              Início
+            </Button>
+            <Button variant="button" color="textPrimary" component={HashLink} to={'/#portfolio'} className={classes.link}>
               Portfólio
-            </Link>
-            <Link variant="button" color="textPrimary" href="#contato" className={classes.link}>
+            </Button>
+            <Button variant="button" color="textPrimary" component={HashLink} to={'/#contato'} className={classes.link}>
               Contato
-            </Link>
+            </Button>
           </nav>
         </Toolbar>
       </AppBar>

@@ -9,19 +9,19 @@ import CardActions from "@material-ui/core/CardActions";
 import Button from "@material-ui/core/Button";
 import useStyles from "styles";
 
-function ProjetoCard({id, nome, area, andares, apartamentos}) {
+function ProjetoCard({id, nome, area, andares, apartamentos, capa}) {
   const classes = useStyles();
-  const imagem = require(`assets/abertura_${id}.png`)
+  const imagem = require(`assets/${capa}`)
   return (
     <Grid item key={id} xs={12} sm={6} md={4}>
       <Card className={classes.card}>
-        <Link to={`/projeto/${id}`}>
-          <CardMedia
-            className={classes.cardMedia}
-            image={imagem}
-            title={nome}
-          />
-        </Link>
+        <CardMedia
+          className={classes.cardMedia}
+          image={imagem}
+          title={nome}
+          component={Link}
+          to={`/projeto/${id}`}
+        />
         <CardContent className={classes.cardContent}>
           <Typography gutterBottom variant="h5" component="h2">{nome}</Typography>
           <Typography>{area} m²</Typography>
@@ -29,11 +29,8 @@ function ProjetoCard({id, nome, area, andares, apartamentos}) {
           <Typography>{apartamentos && `${apartamentos} apartamentos`}</Typography>
         </CardContent>
         <CardActions>
-          <Button size="small" color="primary" href={`/projeto/${id}`}>
+          <Button size="small" color="primary" component={Link} to={`/projeto/${id}`}>
             Ver
-          </Button>
-          <Button size="small" color="primary">
-            Baixar
           </Button>
         </CardActions>
       </Card>

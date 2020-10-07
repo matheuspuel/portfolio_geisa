@@ -6,7 +6,7 @@ import useStyles from "styles";
 function Dados(props) {
   const classes = useStyles();
   return (
-    <div id={'informacoes'} className={classes.dados}>
+    <div className={classes.dados}>
       <Container maxWidth="sm">
         <Typography component="h1" variant="h3" align="center" color="textPrimary" gutterBottom>
           Eng. Civil Geisa Marques

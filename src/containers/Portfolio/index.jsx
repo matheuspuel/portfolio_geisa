@@ -10,12 +10,12 @@ function Portfolio(props) {
   const classes = useStyles();
   return (
     <>
-      <Typography id={'portfolio'} variant="h4" align="center" color="textPrimary" className={classes.cardGridTitle}>
-        Portfólio
-      </Typography>
-      <Container className={classes.cardGrid} maxWidth="md">
+      <Container id='portfolio' className={classes.cardGrid} maxWidth="md">
+        <Typography variant="h4" align="center" color="textPrimary" className={classes.cardGridTitle}>
+          Portfólio
+        </Typography>
         <Grid container spacing={4}>
-          {projetos.map(({id, nome, area, andares, apartamentos, imagem}) => {
+          {projetos.map(({id, nome, area, andares, apartamentos, capa}) => {
             return <ProjetoCard
               key={id}
               id={id}
@@ -23,7 +23,7 @@ function Portfolio(props) {
               area={area}
               andares={andares}
               apartamentos={apartamentos}
-              imagem={imagem}
+              capa={capa}
             />
           })}
         </Grid>
