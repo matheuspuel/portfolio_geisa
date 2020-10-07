@@ -16,13 +16,13 @@ function Nav(props) {
             Eng. Civil Geisa Marques
           </Typography>
           <nav>
-            <Button variant="button" color="textPrimary" component={HashLink} to={'/#'} className={classes.link}>
+            <Button component={HashLink} to={'/#'} className={classes.link}>
               Início
             </Button>
-            <Button variant="button" color="textPrimary" component={HashLink} to={'/#portfolio'} className={classes.link}>
+            <Button component={HashLink} to={'/#portfolio'} className={classes.link}>
               Portfólio
             </Button>
-            <Button variant="button" color="textPrimary" component={HashLink} to={'/#contato'} className={classes.link}>
+            <Button component={HashLink} to={'/#contato'} className={classes.link}>
               Contato
             </Button>
           </nav>

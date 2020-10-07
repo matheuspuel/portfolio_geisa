@@ -15,15 +15,10 @@ function Portfolio(props) {
           Portfólio
         </Typography>
         <Grid container spacing={4}>
-          {projetos.map(({id, nome, area, andares, apartamentos, capa}) => {
+          {projetos.map(projeto => {
             return <ProjetoCard
-              key={id}
-              id={id}
-              nome={nome}
-              area={area}
-              andares={andares}
-              apartamentos={apartamentos}
-              capa={capa}
+              key={projeto.id}
+              projeto={projeto}
             />
           })}
         </Grid>

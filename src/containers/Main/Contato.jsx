@@ -1,10 +1,14 @@
 import React from 'react';
 import Typography from "@material-ui/core/Typography";
 import useStyles from "styles";
-import Link from "@material-ui/core/Link";
+import MuiLink from "@material-ui/core/Link";
+// import {Link} from "react-router-dom";
 import {EmailOutlined, Phone, WhatsApp} from "@material-ui/icons";
 import Grid from "@material-ui/core/Grid";
 
+const email = 'geisamarques1995@gmail.com';
+const phone = '(48) 99912-7098';
+const phoneClean = '5548999127098';
 
 function Contato(props) {
   const classes = useStyles();
@@ -15,31 +19,43 @@ function Contato(props) {
       </Typography>
 
       <Grid container alignItems="center" justify='center' direction="row">
-        <EmailOutlined />
+        <MuiLink
+          color="textPrimary"
+          href={`mailto: ${email}`}
+        >
+          <EmailOutlined/>
+        </MuiLink>
         <Typography variant="subtitle1" align="center" color="textPrimary" component="p">
-          <Link
+          <MuiLink
             color="textPrimary"
-            href='mailto: geisamarques1995@gmail.com'
+            href={`mailto: ${email}`}
             className={classes.link}
           >
-            geisamarques1995@gmail.com
-          </Link>
+            {email}
+          </MuiLink>
         </Typography>
       </Grid>
 
       <Grid container alignItems="center" justify='center' direction="row">
         <Phone/>
-        <WhatsApp/>
+        <MuiLink
+          color="textPrimary"
+          href={`https://api.whatsapp.com/send?phone=${phoneClean}`}
+          target="_blank"
+          rel='noopener noreferrer'
+        >
+          <WhatsApp/>
+        </MuiLink>
         <Typography variant="subtitle1" align="center" color="textPrimary" component="p">
-          <Link
+          <MuiLink
             color="textPrimary"
-            href='https://api.whatsapp.com/send?phone=5548999127098'
+            href={`https://api.whatsapp.com/send?phone=${phoneClean}`}
             target="_blank"
             rel='noopener noreferrer'
             className={classes.link}
           >
-            (48) 99912-7098
-          </Link>
+            {phone}
+          </MuiLink>
         </Typography>
       </Grid>
 

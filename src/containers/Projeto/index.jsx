@@ -5,10 +5,11 @@ import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import projetos from "../../resources/projetos/projetos.json";
 import Button from "@material-ui/core/Button";
-import ImagemCard from "./ImagemCard";
 import {useParams} from "react-router";
 import PdfCard from "./PdfCard";
 import {Link} from "react-router-dom";
+import ImageGallery from 'react-image-gallery';
+import "react-image-gallery/styles/css/image-gallery.css";
 
 function Projeto(props) {
   let { id } = useParams();
@@ -16,7 +17,7 @@ function Projeto(props) {
   const projeto = projetos.find(x => x.id === parseInt(id));
   return (
     <>
-      <Container className={classes.cardGrid} maxWidth="md">
+      <Container id='projeto' className={classes.cardGrid} maxWidth="md">
         <Grid container alignItems="baseline" direction="row">
           <Grid item xs={2}>
             <Button size="small" color="primary" component={Link} to={`/`}>
@@ -30,18 +31,32 @@ function Projeto(props) {
           </Grid>
           <span/>
         </Grid>
-        <Grid container spacing={4}>
-          {projeto.imagens.map((filename, index) => {
-            return <ImagemCard
-              key={index}
-              filename={filename}
-            />
+
+        <ImageGallery
+          items={projeto.imagens.map(filename => {
+            const imagem = require(`assets/${filename}`)
+            return {
+              original: imagem,
+              thumbnail: imagem,
+            }
           })}
-        </Grid>
+          showPlayButton={false}
+          onClick={e=> window.open(e.target.src, "_blank")}
+        />
+
+        {/*<Grid container spacing={4}>*/}
+        {/*  {projeto.imagens.map((filename, index) => {*/}
+        {/*    return <ImagemCard*/}
+        {/*      key={index}*/}
+        {/*      filename={filename}*/}
+        {/*    />*/}
+        {/*  })}*/}
+        {/*</Grid>*/}
+
       </Container>
       <Container className={classes.cardGrid} maxWidth="md">
         <Typography variant="h6" align="center" color="textSecondary" className={classes.cardGridTitle}>
-          Baixe o projeto completo em PDF
+          Veja o projeto completo em PDF
         </Typography>
         <Grid container spacing={4}>
           <PdfCard filename={projeto.projeto}/>
