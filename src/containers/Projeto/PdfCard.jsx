@@ -9,10 +9,12 @@ import CardActions from "@material-ui/core/CardActions";
 import Button from "@material-ui/core/Button";
 import pdfLogo from "assets/pdf.png";
 import {Link} from "react-router-dom";
+import {checkMobile} from "utils/checkDevice";
 
 function PdfCard({filename}) {
   const classes = useStyles();
-  const file = require(`assets/${filename}`)
+  const file = require(`assets/${filename}`);
+  const isMobile = checkMobile();
   return (
     <Grid item xs={12} sm={6} md={4}>
       <Card className={classes.card}>
@@ -22,14 +24,17 @@ function PdfCard({filename}) {
           component={Link}
           to={file}
           target="_blank"
+          download={isMobile}
         />
         <CardContent className={classes.cardContent}>
           <Typography>Projeto completo</Typography>
         </CardContent>
         <CardActions>
-          <Button size="small" color="primary" component={Link} to={file} target="_blank">
-            Abrir
-          </Button>
+          {!isMobile &&
+            <Button size="small" color="primary" component={Link} to={file} target="_blank">
+              Abrir
+            </Button>
+          }
           <Button size="small" color="primary" component={Link} to={file} target="_blank" download >
             Baixar
           </Button>
