@@ -41,7 +41,7 @@ function Projeto(props) {
             }
           })}
           showPlayButton={false}
-          onClick={e=> window.open(e.target.src, "_blank")}
+          // onClick={e=> window.open(e.target.src, "_blank")}
         />
 
         {/*<Grid container spacing={4}>*/}

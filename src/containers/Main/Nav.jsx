@@ -10,9 +10,9 @@ function Nav(props) {
   const classes = useStyles();
   return (
     <>
-      <AppBar position="static" color="default" elevation={0} className={classes.appBar}>
+      <AppBar position="static" elevation={0} className={classes.appBar}>
         <Toolbar className={classes.toolbar}>
-          <Typography variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
+          <Typography variant="h6" color="textPrimary" noWrap className={classes.toolbarTitle}>
             Eng. Civil Geisa Marques
           </Typography>
           <nav>

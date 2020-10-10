@@ -10,7 +10,7 @@ import Button from "@material-ui/core/Button";
 import useStyles from "styles";
 
 function ProjetoCard({projeto}) {
-  const {id, nome, cidade, area, andares, apartamentos, capa} = projeto;
+  const {id, nome, cidade, area, pavimentos, apartamentos, capa} = projeto;
   const classes = useStyles();
   const imagem = require(`assets/${capa}`)
   return (
@@ -27,7 +27,7 @@ function ProjetoCard({projeto}) {
           <Typography gutterBottom variant="h5" component="h2">{nome}</Typography>
           <Typography>{cidade}</Typography>
           <Typography>{area} m²</Typography>
-          <Typography>{andares && (andares === 1 ? '1 andar' : `${andares} andares`)}</Typography>
+          <Typography>{pavimentos && (pavimentos === 1 ? 'Casa térrea' : `${pavimentos} pavimentos`)}</Typography>
           <Typography>{apartamentos && `${apartamentos} apartamentos`}</Typography>
         </CardContent>
         <CardActions>

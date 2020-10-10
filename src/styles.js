@@ -1,8 +1,10 @@
 import {makeStyles} from "@material-ui/core/styles";
+import Banner from "assets/banner4.webp"
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
     borderBottom: `1px solid ${theme.palette.divider}`,
+    backgroundColor: theme.palette.background.default,
   },
   toolbar: {
     flexWrap: 'wrap',
@@ -14,7 +16,13 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(1, 1.5),
   },
   dados: {
-    backgroundColor: theme.palette.background.paper,
+    // backgroundColor: theme.palette.background.paper,
+    backgroundColor: '#ffffff',
+    backgroundImage: `linear-gradient(to bottom, rgba(255,255,255,.7) 0%,rgba(255,255,255,.7) 100%), url(${Banner})`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'bottom',
+    // opacity: '0.5',
     padding: theme.spacing(8, 0, 6),
   },
   cardGridTitle: {

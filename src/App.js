@@ -10,13 +10,13 @@ function App() {
     <div>
       <CssBaseline />
       <BrowserRouter>
-        <Switch>
-          <Main>
-            <Route path='/' exact component={Portfolio} />
-            <Route path='/projeto/:id' children={<Projeto/>} />
-            <Redirect to='/' />
-          </Main>
-        </Switch>
+        <Main>
+          <Switch>
+              <Route path='/' exact component={Portfolio} />
+              <Route path='/projeto/:id' children={<Projeto/>} />
+              <Redirect to='/' />
+          </Switch>
+        </Main>
       </BrowserRouter>
     </div>
   );
