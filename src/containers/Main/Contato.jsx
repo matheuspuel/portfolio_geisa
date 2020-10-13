@@ -41,8 +41,6 @@ function Contato(props) {
         <MuiLink
           color="textPrimary"
           href={`https://api.whatsapp.com/send?phone=${phoneClean}`}
-          target="_blank"
-          rel='noopener noreferrer'
         >
           <WhatsApp/>
         </MuiLink>
