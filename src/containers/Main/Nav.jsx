@@ -12,17 +12,22 @@ function Nav(props) {
     <>
       <AppBar position="static" elevation={0} className={classes.appBar}>
         <Toolbar className={classes.toolbar}>
-          <Typography variant="h6" color="textPrimary" noWrap className={classes.toolbarTitle}>
-            Eng. Civil Geisa Marques
+          <Typography variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
+            <HashLink
+              to={'/'}
+              className={classes.toolbarTitleLink}
+            >
+              Eng. Civil Geisa Marques
+            </HashLink>
           </Typography>
           <nav>
-            <Button component={HashLink} to={'/#'} className={classes.link}>
+            <Button component={HashLink} to={'/'} color='inherit' className={classes.link}>
               Início
             </Button>
-            <Button component={HashLink} to={'/#portfolio'} className={classes.link}>
+            <Button component={HashLink} to={'/#portfolio'} color='inherit' className={classes.link}>
               Portfólio
             </Button>
-            <Button component={HashLink} to={'/#contato'} className={classes.link}>
+            <Button component={HashLink} to={'/#contato'} color='inherit' className={classes.link}>
               Contato
             </Button>
           </nav>

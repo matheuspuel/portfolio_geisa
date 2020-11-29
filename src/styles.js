@@ -1,16 +1,21 @@
 import {makeStyles} from "@material-ui/core/styles";
-import Banner from "assets/banner4.webp"
+import Banner from "assets/banner6.png"
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
     borderBottom: `1px solid ${theme.palette.divider}`,
-    backgroundColor: theme.palette.background.default,
+    backgroundColor: theme.palette.background.dark,
+    color: theme.palette.text.light,
   },
   toolbar: {
     flexWrap: 'wrap',
   },
   toolbarTitle: {
     flexGrow: 1,
+  },
+  toolbarTitleLink: {
+    textDecoration: 'none !important',
+    color: theme.palette.text.light,
   },
   link: {
     margin: theme.spacing(1, 1.5),
@@ -44,8 +49,9 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   contato: {
-    backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(6),
+    backgroundColor: theme.palette.background.dark,
+    color: theme.palette.text.light,
   },
 }));
 

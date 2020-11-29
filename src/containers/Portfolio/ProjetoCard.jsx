@@ -24,7 +24,7 @@ function ProjetoCard({projeto}) {
           to={`/projeto/${id}#projeto`}
         />
         <CardContent className={classes.cardContent}>
-          <Typography gutterBottom variant="h5" component="h2">{nome}</Typography>
+          {/*<Typography gutterBottom variant="h5" component="h2">{nome}</Typography>*/}
           <Typography>{cidade}</Typography>
           <Typography>{area} m²</Typography>
           <Typography>{pavimentos && (pavimentos === 1 ? 'Casa térrea' : `${pavimentos} pavimentos`)}</Typography>

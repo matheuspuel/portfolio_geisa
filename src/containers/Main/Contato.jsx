@@ -20,14 +20,14 @@ function Contato(props) {
 
       <Grid container alignItems="center" justify='center' direction="row">
         <MuiLink
-          color="textPrimary"
+          color="inherit"
           href={`mailto: ${email}`}
         >
           <EmailOutlined/>
         </MuiLink>
-        <Typography variant="subtitle1" align="center" color="textPrimary" component="p">
+        <Typography variant="subtitle1" align="center" color="inherit" component="p">
           <MuiLink
-            color="textPrimary"
+            color="inherit"
             href={`mailto: ${email}`}
             className={classes.link}
           >
@@ -39,16 +39,16 @@ function Contato(props) {
       <Grid container alignItems="center" justify='center' direction="row">
         <Phone/>
         <MuiLink
-          color="textPrimary"
+          color="inherit"
           href={`https://api.whatsapp.com/send?phone=${phoneClean}`}
           target="_blank"
           rel='noopener noreferrer'
         >
           <WhatsApp/>
         </MuiLink>
-        <Typography variant="subtitle1" align="center" color="textPrimary" component="p">
+        <Typography variant="subtitle1" align="center" component="p" color="inherit">
           <MuiLink
-            color="textPrimary"
+            color="inherit"
             href={`https://api.whatsapp.com/send?phone=${phoneClean}`}
             target="_blank"
             rel='noopener noreferrer'
