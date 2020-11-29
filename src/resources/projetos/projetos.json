@@ -24,11 +24,25 @@
     "area": 200,
     "pavimentos": 2,
     "apartamentos": null,
-    "capa": "projeto2/capa.png",
+    "capa": "projeto2/capa.jpeg",
     "projeto": "projeto2/projeto.pdf",
     "imagens": [
-      "projeto2/imagem1.webp",
-      "projeto2/imagem2.jpg"
+      "projeto2/pdfjoiner-01.png",
+      "projeto2/pdfjoiner-02.png",
+      "projeto2/pdfjoiner-03.png",
+      "projeto2/pdfjoiner-04.png",
+      "projeto2/pdfjoiner-05.png",
+      "projeto2/pdfjoiner-06.png",
+      "projeto2/pdfjoiner-07.png",
+      "projeto2/pdfjoiner-08.png",
+      "projeto2/pdfjoiner-09.png",
+      "projeto2/pdfjoiner-10.png",
+      "projeto2/pdfjoiner-11.png",
+      "projeto2/pdfjoiner-12.png",
+      "projeto2/pdfjoiner-13.png",
+      "projeto2/pdfjoiner-14.png",
+      "projeto2/pdfjoiner-15.png",
+      "projeto2/pdfjoiner-16.png"
     ]
   },
   {
@@ -41,8 +55,27 @@
     "capa": "projeto3/capa.png",
     "projeto": "projeto3/projeto.pdf",
     "imagens": [
-      "projeto3/imagem1.webp",
-      "projeto3/imagem2.webp"
+      "projeto3/projeto-01.png",
+      "projeto3/projeto-02.png",
+      "projeto3/projeto-03.png",
+      "projeto3/projeto-04.png",
+      "projeto3/projeto-05.png",
+      "projeto3/projeto-06.png",
+      "projeto3/projeto-07.png",
+      "projeto3/projeto-08.png",
+      "projeto3/projeto-09.png",
+      "projeto3/projeto-10.png",
+      "projeto3/projeto-11.png",
+      "projeto3/projeto-12.png",
+      "projeto3/projeto-13.png",
+      "projeto3/projeto-14.png",
+      "projeto3/projeto-15.png",
+      "projeto3/projeto-16.png",
+      "projeto3/projeto-17.png",
+      "projeto3/projeto-18.png",
+      "projeto3/projeto-19.png",
+      "projeto3/projeto-20.png",
+      "projeto3/projeto-21.png"
     ]
   },
   {
@@ -55,8 +88,23 @@
     "capa": "projeto4/capa.png",
     "projeto": "projeto4/projeto.pdf",
     "imagens": [
-      "projeto4/imagem1.webp",
-      "projeto4/imagem2.jpg"
+      "projeto4/projeto-01.png",
+      "projeto4/projeto-02.png",
+      "projeto4/projeto-03.png",
+      "projeto4/projeto-04.png",
+      "projeto4/projeto-05.png",
+      "projeto4/projeto-06.png",
+      "projeto4/projeto-07.png",
+      "projeto4/projeto-08.png",
+      "projeto4/projeto-09.png",
+      "projeto4/projeto-10.png",
+      "projeto4/projeto-11.png",
+      "projeto4/projeto-12.png",
+      "projeto4/projeto-13.png",
+      "projeto4/projeto-14.png",
+      "projeto4/projeto-15.png",
+      "projeto4/projeto-16.png",
+      "projeto4/projeto-17.png"
     ]
   }
 ]
