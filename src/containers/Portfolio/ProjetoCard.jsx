@@ -10,9 +10,9 @@ import Button from "@material-ui/core/Button";
 import useStyles from "styles";
 
 function ProjetoCard({projeto}) {
-  const {id, nome, cidade, area, pavimentos, apartamentos, capa} = projeto;
+  const {id, nome, cidade, area, pavimentos, apartamentos, folder, capa} = projeto;
   const classes = useStyles();
-  const imagem = require(`assets/${capa}`)
+  const imagem = require(`assets/${folder}/${capa}`)
   return (
     <Grid item key={id} xs={12} sm={6} md={4}>
       <Card className={classes.card}>

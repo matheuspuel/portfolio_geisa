@@ -15,6 +15,7 @@ function Projeto(props) {
   let { id } = useParams();
   const classes = useStyles();
   const projeto = projetos.find(x => x.id === parseInt(id));
+  const {nome, imagens, folder, pdf} = projeto
   return (
     <>
       <Container id='projeto' className={classes.cardGrid} maxWidth="md">
@@ -26,20 +27,23 @@ function Projeto(props) {
           </Grid>
           <Grid item xs={8}>
             <Typography variant="h4" align="center" color="textPrimary" className={classes.cardGridTitle}>
-              {projeto.nome}
+              {nome}
             </Typography>
           </Grid>
           <span/>
         </Grid>
 
         <ImageGallery
-          items={projeto.imagens.map(filename => {
-            const imagem = require(`assets/${filename}`)
+          items={imagens.original.map((originalFilename, index) => {
+            const thumbnailFilename = imagens.thumbnail[index]
+            const original = require(`assets/${folder}/original/${originalFilename}`)
+            const thumbnail = require(`assets/${folder}/thumbnail/${thumbnailFilename}`)
             return {
-              original: imagem,
-              thumbnail: imagem,
+              original: original,
+              thumbnail: thumbnail,
             }
           })}
+          infinite={false}
           showPlayButton={false}
           // onClick={e=> window.open(e.target.src, "_blank")}
         />
@@ -59,7 +63,7 @@ function Projeto(props) {
           Veja o projeto completo em PDF
         </Typography>
         <Grid container spacing={4}>
-          <PdfCard filename={projeto.projeto}/>
+          <PdfCard filename={`${folder}/${pdf}`}/>
         </Grid>
       </Container>
     </>
