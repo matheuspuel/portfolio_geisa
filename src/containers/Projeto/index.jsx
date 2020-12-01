@@ -43,6 +43,7 @@ function Projeto(props) {
               thumbnail: thumbnail,
             }
           })}
+          thumbnailPosition={'top'}
           lazyLoad={true}
           infinite={false}
           showPlayButton={false}
