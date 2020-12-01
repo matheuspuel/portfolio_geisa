@@ -26,7 +26,7 @@ function ProjetoCard({projeto}) {
         <CardContent className={classes.cardContent}>
           {/*<Typography gutterBottom variant="h5" component="h2">{nome}</Typography>*/}
           <Typography>{cidade}</Typography>
-          <Typography>{area} m²</Typography>
+          <Typography>{area.toFixed(2).replace('.',',')} m²</Typography>
           <Typography>{pavimentos && (pavimentos === 1 ? 'Casa térrea' : `${pavimentos} pavimentos`)}</Typography>
           <Typography>{apartamentos && `${apartamentos} apartamentos`}</Typography>
         </CardContent>

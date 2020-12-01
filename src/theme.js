@@ -22,6 +22,23 @@ const theme = createMuiTheme({
       dark: '#000000'
     }
   },
+  typography: {
+    fontFamily: [
+      'Roboto',
+      'Helvetica',
+      'Arial',
+      // '"Helvetica Neue"',
+      // 'Verdana',
+      'sans-serif',
+    ].join(','),
+
+    // fontFamily: [
+    //   'Georgia',
+    //   '"Times New Roman"',
+    //   'Times',
+    //   'serif ',
+    // ].join(','),
+  },
 });
 
 export default theme;
