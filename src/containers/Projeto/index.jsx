@@ -43,6 +43,7 @@ function Projeto(props) {
               thumbnail: thumbnail,
             }
           })}
+          lazyLoad={true}
           infinite={false}
           showPlayButton={false}
           // onClick={e=> window.open(e.target.src, "_blank")}
