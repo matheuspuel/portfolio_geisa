@@ -8,8 +8,11 @@ function Dados(props) {
   return (
     <div className={classes.dados}>
       <Container maxWidth="sm">
+        <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom className={classes.nome}>
+          Geisa Marques
+        </Typography>
         <Typography component="h1" variant="h3" align="center" color="textPrimary" gutterBottom className={classes.nome}>
-          Eng. Civil Geisa Marques
+          Engenheira Civil
         </Typography>
         <Typography variant="h6" align="center" color="textSecondary" paragraph>
           CREA/SC: 176404-1
