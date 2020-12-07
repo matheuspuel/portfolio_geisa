@@ -2,6 +2,7 @@
   {
     "id": 8,
     "nome": "Projeto 8",
+    "tipo": "RU",
     "cidade": "Brusque/SC",
     "area": 284.12,
     "pavimentos": 2,
@@ -48,6 +49,7 @@
   {
     "id": 7,
     "nome": "Projeto 7",
+    "tipo": "RM",
     "cidade": "Blumenau/SC",
     "area": 398.13,
     "pavimentos": 3,
@@ -94,6 +96,7 @@
   {
     "id": 6,
     "nome": "Projeto 6",
+    "tipo": "RU",
     "cidade": "São João Batista/SC",
     "area": 260.00,
     "pavimentos": 2,
@@ -148,6 +151,7 @@
   {
     "id": 5,
     "nome": "Projeto 5",
+    "tipo": "RM",
     "cidade": "Tijucas/SC",
     "area": 581.14,
     "pavimentos": 4,
@@ -216,6 +220,7 @@
   {
     "id": 4,
     "nome": "Projeto 4",
+    "tipo": "RU",
     "cidade": "Brusque/SC",
     "area": 226.65,
     "pavimentos": 1,
@@ -246,6 +251,7 @@
   {
     "id": 3,
     "nome": "Projeto 3",
+    "tipo": "RU",
     "cidade": "Brusque/SC",
     "area": 211.88,
     "pavimentos": 1,
@@ -296,6 +302,7 @@
   {
     "id": 2,
     "nome": "Projeto 2",
+    "tipo": "RM",
     "cidade": "Brusque/SC",
     "area": 308.63,
     "pavimentos": 2,
@@ -348,6 +355,7 @@
   {
     "id": 1,
     "nome": "Projeto 1",
+    "tipo": "M",
     "cidade": "Major Gercino/SC",
     "area": 393.65,
     "pavimentos": 2,

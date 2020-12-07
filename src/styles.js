@@ -31,10 +31,14 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(8, 0, 6),
   },
   nome: {
+    textTransform: 'uppercase',
+    fontFamily: 'Georgia, "Times New Roman", Times, serif',
+  },
+  profissao: {
     fontFamily: 'Georgia, "Times New Roman", Times, serif',
   },
   servicos: {
-    textTransform: 'uppercase',
+    // textTransform: 'uppercase',
   },
   cardGridTitle: {
     paddingBottom: theme.spacing(4),
@@ -44,6 +48,10 @@ const useStyles = makeStyles((theme) => ({
   cardGrid: {
     paddingTop: theme.spacing(4),
     paddingBottom: theme.spacing(4),
+  },
+  ferramentas: {
+    paddingBottom: theme.spacing(4),
+    fontSize: '20px',
   },
   card: {
     height: '100%',

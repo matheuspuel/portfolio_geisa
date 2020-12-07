@@ -9,8 +9,27 @@ import CardActions from "@material-ui/core/CardActions";
 import Button from "@material-ui/core/Button";
 import useStyles from "styles";
 
+const BULLET = '\u2022'
+
+const getTipoText = (tipo) => {
+  switch (tipo){
+    case 'RU':
+      return 'Residencial Unifamiliar'
+    case 'RM':
+      return 'Residencial Multifamiliar'
+    case 'M':
+      return 'Edificação Mista'
+    case 'C':
+      return 'Edificação Comercial'
+    case 'I':
+      return 'Edificação Industrial'
+    default:
+      return ''
+  }
+}
+
 function ProjetoCard({projeto}) {
-  const {id, nome, cidade, area, pavimentos, apartamentos, folder, capa} = projeto;
+  const {id, nome, tipo, cidade, area, pavimentos, apartamentos, folder, capa} = projeto;
   const classes = useStyles();
   const imagem = require(`assets/${folder}/${capa}`)
   return (
@@ -25,14 +44,15 @@ function ProjetoCard({projeto}) {
         />
         <CardContent className={classes.cardContent}>
           {/*<Typography gutterBottom variant="h5" component="h2">{nome}</Typography>*/}
-          <Typography>{cidade}</Typography>
-          <Typography>{area.toFixed(2).replace('.',',')} m²</Typography>
-          <Typography>{pavimentos && (pavimentos === 1 ? 'Casa térrea' : `${pavimentos} pavimentos`)}</Typography>
-          <Typography>{apartamentos && `${apartamentos} apartamentos`}</Typography>
+          <Typography>{BULLET} {getTipoText(tipo)}</Typography>
+          <Typography>{BULLET} {cidade}</Typography>
+          <Typography>{BULLET} {area.toFixed(2).replace('.',',')} m²</Typography>
+          <Typography>{BULLET} {pavimentos && (pavimentos === 1 ? 'Térreo' : `${pavimentos} pavimentos`)}</Typography>
+          <Typography>{apartamentos && `${BULLET} ${apartamentos} apartamentos`}</Typography>
         </CardContent>
         <CardActions>
           <Button size="small" color="primary" component={HashLink} to={`/projeto/${id}#projeto`}>
-            Ver
+            Ver Projeto
           </Button>
         </CardActions>
       </Card>

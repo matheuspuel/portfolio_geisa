@@ -14,6 +14,9 @@ function Portfolio(props) {
         <Typography variant="h4" align="center" color="textPrimary" className={classes.cardGridTitle}>
           Portfólio
         </Typography>
+        <Typography align="center" color="textPrimary" className={classes.ferramentas}>
+          Os projetos são produzidos com o software Eberick da AltoQi, com suporte ao conceito BIM
+        </Typography>
         <Grid container spacing={4}>
           {projetos.map(projeto => {
             return <ProjetoCard

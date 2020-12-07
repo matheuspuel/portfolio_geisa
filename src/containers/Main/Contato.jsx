@@ -6,7 +6,7 @@ import MuiLink from "@material-ui/core/Link";
 import {EmailOutlined, Phone, WhatsApp} from "@material-ui/icons";
 import Grid from "@material-ui/core/Grid";
 
-const email = 'geisamarques1995@gmail.com';
+const email = 'eng.geisamarques@gmail.com';
 const phone = '(48) 99912-7098';
 const phoneClean = '5548999127098';
 
