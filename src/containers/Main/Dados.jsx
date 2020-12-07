@@ -16,8 +16,7 @@ function Dados(props) {
           CREA/SC: 176404-1
         </Typography>
         <Typography variant="h6" align="center" color="textSecondary" paragraph className={classes.servicos}>
-          PROJETOS ESTRUTURAIS EM CONCRETO ARMADO MOLDADO IN-LOCO<br/>
-          BIM com software Eberick da AltoQi
+          PROJETOS ESTRUTURAIS EM CONCRETO ARMADO MOLDADO IN-LOCO
         </Typography>
         {/*<Typography variant="h6" align="center" color="textSecondary" paragraph>*/}
         {/*  X anos de experiência no mercado*/}
