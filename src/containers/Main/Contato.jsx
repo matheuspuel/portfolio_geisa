@@ -59,6 +59,18 @@ function Contato(props) {
         </Typography>
       </Grid>
 
+      <Typography variant="subtitle1" align="right" color="inherit" className={classes.developer}>
+        Website desenvolvido por{' '}
+        <MuiLink
+          color="inherit"
+          href={'https://github.com/matheuspuel'}
+          target="_blank"
+          rel='noopener noreferrer'
+          // className={classes.link}
+        >
+           Matheus Puel
+        </MuiLink>
+      </Typography>
     </div>
   );
 }

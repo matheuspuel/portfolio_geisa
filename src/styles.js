@@ -68,6 +68,11 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(6),
     backgroundColor: theme.palette.background.dark,
     color: theme.palette.text.light,
+    paddingBottom: 0,
+  },
+  developer: {
+    fontSize: '12px',
+    paddingTop: theme.spacing(4)
   },
 }));
 
