@@ -1,6 +1,6 @@
 ## Civil Engineering Portfolio
 
-Website to present the projects of a Civil Engineer.
+Website to present a Civil Engineer's portfolio of projects.
 
 Developed in React.
 
