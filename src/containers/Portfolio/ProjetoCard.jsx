@@ -8,6 +8,7 @@ import Typography from "@material-ui/core/Typography";
 import CardActions from "@material-ui/core/CardActions";
 import Button from "@material-ui/core/Button";
 import useStyles from "styles";
+import {ASSETS_ROOT_URL} from "../../resources/Constansts";
 
 const BULLET = '\u2022'
 
@@ -31,7 +32,7 @@ const getTipoText = (tipo) => {
 function ProjetoCard({projeto}) {
   const {id, nome, tipo, cidade, area, pavimentos, apartamentos, folder, capa} = projeto;
   const classes = useStyles();
-  const imagem = require(`assets/${folder}/${capa}`)
+  const imagem = `${ASSETS_ROOT_URL}/${folder}/${capa}`
   return (
     <Grid item key={id} xs={12} sm={6} md={4}>
       <Card className={classes.card}>

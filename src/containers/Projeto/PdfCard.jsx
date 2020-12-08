@@ -7,9 +7,11 @@ import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import CardActions from "@material-ui/core/CardActions";
 import Button from "@material-ui/core/Button";
-import pdfLogo from "assets/pdf.png";
 import {Link} from "react-router-dom";
 import {checkMobile} from "utils/checkDevice";
+import {ASSETS_ROOT_URL} from "../../resources/Constansts";
+
+const pdfLogo = `${ASSETS_ROOT_URL}/pdf`
 
 function PdfCard({filename}) {
   const classes = useStyles();

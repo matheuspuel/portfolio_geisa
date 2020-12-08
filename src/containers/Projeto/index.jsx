@@ -10,6 +10,7 @@ import PdfCard from "./PdfCard";
 import {Link} from "react-router-dom";
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
+import {ASSETS_ROOT_URL} from 'resources/Constansts'
 
 function Projeto(props) {
   let { id } = useParams();
@@ -36,8 +37,8 @@ function Projeto(props) {
         <ImageGallery
           items={imagens.original.map((originalFilename, index) => {
             const thumbnailFilename = imagens.thumbnail[index]
-            const original = require(`assets/${folder}/original/${originalFilename}`)
-            const thumbnail = require(`assets/${folder}/thumbnail/${thumbnailFilename}`)
+            const original = `${ASSETS_ROOT_URL}/${folder}/original/${originalFilename}`
+            const thumbnail = `${ASSETS_ROOT_URL}/${folder}/thumbnail/${thumbnailFilename}`
             return {
               original: original,
               thumbnail: thumbnail,
