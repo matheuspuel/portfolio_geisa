@@ -1,5 +1,7 @@
 import {makeStyles} from "@material-ui/core/styles";
-import Banner from "assets/banner6.png"
+import {ASSETS_ROOT_URL} from "./resources/Constansts";
+
+const banner = `${ASSETS_ROOT_URL}/banner6`
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
@@ -23,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
   dados: {
     // backgroundColor: theme.palette.background.paper,
     backgroundColor: '#ffffff',
-    backgroundImage: `linear-gradient(to bottom, rgba(255,255,255,.7) 0%,rgba(255,255,255,.7) 100%), url(${Banner})`,
+    backgroundImage: `linear-gradient(to bottom, rgba(255,255,255,.7) 0%,rgba(255,255,255,.7) 100%), url(${banner})`,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'bottom',
@@ -71,7 +73,7 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: 0,
   },
   developer: {
-    fontSize: '12px',
+    fontSize: '10px',
     paddingTop: theme.spacing(4)
   },
 }));
