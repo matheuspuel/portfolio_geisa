@@ -41,6 +41,7 @@ const useStyles = makeStyles((theme) => ({
   },
   servicos: {
     // textTransform: 'uppercase',
+    fontSize: '16px',
   },
   cardGridTitle: {
     paddingBottom: theme.spacing(4),
