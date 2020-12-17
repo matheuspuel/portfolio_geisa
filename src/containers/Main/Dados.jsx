@@ -8,7 +8,7 @@ function Dados(props) {
   return (
     <div className={classes.dados}>
       <Container maxWidth="sm">
-        <Typography variant="h3" align="center" color="textPrimary" gutterBottom className={classes.nome}>
+        <Typography variant="h1" align="center" color="textPrimary" gutterBottom className={classes.nome}>
           Geisa Marques
         </Typography>
         <Typography variant="h5" align="center" color="textSecondary" paragraph className={classes.profissao}>
