@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: master
+  branch: production
 locale: "pt"
 #media_folder: "/src/static/uploads"
 #public_folder: "uploads"
@@ -28,7 +28,7 @@ collections:
       {{cidade}}/{{estado}} -
       {{pavimentos}} pavimento(s) -
       {{data}})
-    sortable_fields: [ numero, commit_date, data, cidade, pavimentos ]
+    sortable_fields: [ numero, commit_date, cidade, pavimentos ]
     fields:
       - label: "Número"
         name: "numero"
@@ -88,6 +88,7 @@ collections:
       - label: "Imagens"
         name: "imagens"
         widget: "image"
+        hint: "Escolha as imagens do projeto"
         media_library:
           config:
             multiple: true

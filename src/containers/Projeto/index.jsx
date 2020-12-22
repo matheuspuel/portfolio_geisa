@@ -3,20 +3,21 @@ import useStyles from "../../styles";
 import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
-import projetos from "../../resources/projetos/projetos.json";
+import {projetos} from "content.json";
 import Button from "@material-ui/core/Button";
 import {useParams} from "react-router";
 import PdfCard from "./PdfCard";
 import {Link} from "react-router-dom";
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
-import {ASSETS_ROOT_URL} from 'resources/Constansts'
+import {getTransformedImage} from 'utils/images'
 
 function Projeto(props) {
   let { id } = useParams();
   const classes = useStyles();
-  const projeto = projetos.find(x => x.id === parseInt(id));
-  const {nome, imagens, folder, pdf} = projeto
+  const projeto = projetos.find(x => x.numero === parseInt(id));
+  const {numero, pdf} = projeto
+  const imagens = Array.isArray(projeto.imagens) ? projeto.imagens : [projeto.imagens]
   return (
     <>
       <Container id='projeto' className={classes.cardGrid} maxWidth="md">
@@ -28,20 +29,17 @@ function Projeto(props) {
           </Grid>
           <Grid item xs={8}>
             <Typography variant="h4" align="center" color="textPrimary" className={classes.cardGridTitle}>
-              {nome}
+              Projeto {numero}
             </Typography>
           </Grid>
           <span/>
         </Grid>
 
         <ImageGallery
-          items={imagens.original.map((originalFilename, index) => {
-            const thumbnailFilename = imagens.thumbnail[index]
-            const original = `${ASSETS_ROOT_URL}/${folder}/original/${originalFilename}`
-            const thumbnail = `${ASSETS_ROOT_URL}/${folder}/thumbnail/${thumbnailFilename}`
+          items={imagens.map(url => {
             return {
-              original: original,
-              thumbnail: thumbnail,
+              original: url,
+              thumbnail: getTransformedImage(url, 't_a4_landscape_thumb'),
             }
           })}
           thumbnailPosition={'top'}
@@ -66,7 +64,7 @@ function Projeto(props) {
           Veja o projeto completo em PDF
         </Typography>
         <Grid container spacing={4}>
-          <PdfCard filename={`${folder}/${pdf}`}/>
+          <PdfCard url={pdf}/>
         </Grid>
       </Container>
     </>

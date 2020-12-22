@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjetoCard from "./ProjetoCard";
-import projetos from 'resources/projetos/projetos.json'
+import {projetos} from 'content.json'
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import useStyles from "styles";
@@ -20,7 +20,7 @@ function Portfolio(props) {
         <Grid container spacing={4}>
           {projetos.map(projeto => {
             return <ProjetoCard
-              key={projeto.id}
+              key={projeto.numero}
               projeto={projeto}
             />
           })}
