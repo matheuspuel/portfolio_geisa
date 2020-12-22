@@ -1,0 +1,106 @@
+local_backend: true
+backend:
+  name: git-gateway
+  branch: master
+locale: "pt"
+#media_folder: "/src/static/uploads"
+#public_folder: "uploads"
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: mmpcloud
+    api_key: 836324934486337
+editor:
+  preview: false
+collections:
+  - name: "projetos"
+    label: "Projetos"
+    label_singular: "Projeto"
+    folder: "content/projetos"
+#    media_folder: "/src/static/uploads/projetos/{{numero}}"
+#    public_folder: "uploads/projetos/{{numero}}"
+    extension: "json"
+    create: true
+    identifier_field: numero
+    slug: "{{slug}}"
+    summary: |
+      Projeto {{slug}}
+      (Tipo: {{tipo}} -
+      {{cidade}}/{{estado}} -
+      {{pavimentos}} pavimento(s) -
+      {{data}})
+    sortable_fields: [ numero, commit_date, data, cidade, pavimentos ]
+    fields:
+      - label: "Número"
+        name: "numero"
+        widget: "number"
+        value_type: "int"
+        hint: "Número único para identificação do projeto"
+      - label: "Tipo"
+        name: "tipo"
+        widget: "select"
+        default: RM
+        options:
+          - { label: "Residencial Unifamiliar", value: "RU" }
+          - { label: "Residencial Multifamiliar", value: "RM" }
+          - { label: "Misto", value: "M" }
+          - { label: "Comercial", value: "C" }
+          - { label: "Industrial", value: "I" }
+      - label: "Cidade"
+        name: "cidade"
+        widget: "string"
+        default: Brusque
+      - label: "Estado"
+        name: "estado"
+        widget: "select"
+        default: SC
+        options: [ AC, AL, AP, AM, BA, CE, ES, GO, MA, MT, MS, MG, PA, PB, PR, PE, PI, RJ, RN, RS, RO, RR, SC, SP, SE, TO, DF ]
+      - label: "Área"
+        name: "area"
+        widget: "number"
+        value_type: "float"
+        step: 0.01
+      - label: "Pavimentos"
+        name: "pavimentos"
+        widget: "number"
+        value_type: "int"
+        default: 1
+        hint: 'Coloque "1" para térreo'
+      - label: "Apartamentos"
+        name: "apartamentos"
+        widget: "number"
+        value_type: "int"
+        required: false
+        hint: 'Se não for edifício com apartamentos, deixe em branco'
+      - label: "Data"
+        name: "data"
+        widget: "datetime"
+        date_format: 'DD/MM/YYYY'
+        time_format: false
+        format: 'DD/MM/YYYY'
+        hint: 'Data em que o projeto foi finalizado. Usado para ordenar os projetos'
+      - label: "PDF"
+        name: "pdf"
+        widget: "file"
+        pattern: [ '.*\.pdf$', 'O arquivo deve ter extensão ".pdf"' ]
+      - label: "Imagem de capa"
+        name: "capa"
+        widget: "image"
+      - label: "Imagens"
+        name: "imagens"
+        widget: "image"
+        media_library:
+          config:
+            multiple: true
+            max_files: 100
+#            previewStep: false
+#      - label: "Imagens"
+#        name: "imagens"
+#        label_singular: "imagem"
+#        widget: "list"
+#        collapsed: true
+#        summary: '{{image}}'
+#        field:
+#          label: "Imagem"
+#          name: "image"
+#          widget: image
