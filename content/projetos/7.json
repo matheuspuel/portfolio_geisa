@@ -1,0 +1,29 @@
+{
+  "imagens": [
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436388/portfolio_geisa/projeto7/original/projeto-01.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436389/portfolio_geisa/projeto7/original/projeto-02.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436389/portfolio_geisa/projeto7/original/projeto-03.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436389/portfolio_geisa/projeto7/original/projeto-04.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436390/portfolio_geisa/projeto7/original/projeto-05.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436390/portfolio_geisa/projeto7/original/projeto-06.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436391/portfolio_geisa/projeto7/original/projeto-07.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436392/portfolio_geisa/projeto7/original/projeto-08.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436392/portfolio_geisa/projeto7/original/projeto-09.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436392/portfolio_geisa/projeto7/original/projeto-10.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436393/portfolio_geisa/projeto7/original/projeto-11.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436393/portfolio_geisa/projeto7/original/projeto-12.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436393/portfolio_geisa/projeto7/original/projeto-13.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436393/portfolio_geisa/projeto7/original/projeto-14.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436394/portfolio_geisa/projeto7/original/projeto-15.png"
+  ],
+  "cidade": "Blumenau",
+  "pavimentos": 3,
+  "estado": "SC",
+  "data": "16/09/2020",
+  "area": 398.13,
+  "apartamentos": 6,
+  "capa": "https://res.cloudinary.com/mmpcloud/image/upload/v1608210896/portfolio_geisa/projeto7/capa.jpg",
+  "pdf": "https://res.cloudinary.com/mmpcloud/image/upload/v1607436395/portfolio_geisa/projeto7/projeto.pdf",
+  "tipo": "RM",
+  "numero": 7
+}
