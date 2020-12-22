@@ -13,5 +13,11 @@ const result = fs.readdirSync(sourceDir)
     return {...object, [collection]: collectionResult}
   }, {})
 
+const sortContent = (content) => {
+  content.projetos.sort((a, b) => b.numero - a.numero)
+}
+
+sortContent(result)
+
 fs.writeFileSync(targetFile, JSON.stringify(result))
 
