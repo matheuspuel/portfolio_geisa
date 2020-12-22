@@ -23,8 +23,7 @@ function PdfCard({url}) {
           image={pdfLogo}
           component='a'
           href={url}
-          target="_blank"
-          download={isMobile}
+          target={!isMobile && '_blank'}
         />
         <CardContent className={classes.cardContent}>
           <Typography>Projeto completo</Typography>
@@ -35,8 +34,7 @@ function PdfCard({url}) {
             color="primary"
             component='a'
             href={url}
-            target="_blank"
-            download={isMobile}
+            target={!isMobile && '_blank'}
           >
             {isMobile ? 'Baixar Arquivo' : 'Abrir Arquivo'}
           </Button>
