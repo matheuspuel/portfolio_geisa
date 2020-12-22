@@ -1,0 +1,19 @@
+{
+  "imagens": [
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436351/portfolio_geisa/projeto4/original/018-20_CA-01_A1_locacao_R00-1.jpg",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436351/portfolio_geisa/projeto4/original/018-20_CA-02_A1_formas_R00-1.jpg",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436351/portfolio_geisa/projeto4/original/018-20_CA-03_A1_sapatas_R00-1.jpg",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436352/portfolio_geisa/projeto4/original/018-20_CA-04_A2_sapatas_R00-1.jpg",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436352/portfolio_geisa/projeto4/original/018-20_CA-05_A1_baldrames_R00-1.jpg",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436354/portfolio_geisa/projeto4/original/018-20_CA-06_A1_baldrames_R00-1.jpg"
+  ],
+  "cidade": "Brusque",
+  "pavimentos": 1,
+  "estado": "SC",
+  "data": "12/03/2020",
+  "area": 226.65,
+  "capa": "https://res.cloudinary.com/mmpcloud/image/upload/v1607436350/portfolio_geisa/projeto4/fachada.png",
+  "pdf": "https://res.cloudinary.com/mmpcloud/image/upload/v1607436353/portfolio_geisa/projeto4/projeto.pdf",
+  "tipo": "RU",
+  "numero": 4
+}
