@@ -30,14 +30,14 @@ const getTipoText = (tipo) => {
 }
 
 function ProjetoCard({projeto}) {
-  const {numero, tipo, cidade, area, pavimentos, apartamentos, capa} = projeto;
+  const {numero, tipo, cidade, estado, area, pavimentos, apartamentos, capa} = projeto;
   const classes = useStyles();
   return (
     <Grid item key={numero} xs={12} sm={6} md={4}>
       <Card className={classes.card}>
         <CardMedia
           className={classes.cardMedia}
-          image={getTransformedImage(capa, 't_project_cover')}
+          image={getTransformedImage(capa, 't_project_cover_3')}
           title={`Projeto ${numero}`}
           component={HashLink}
           to={`/projeto/${numero}#projeto`}
@@ -45,7 +45,7 @@ function ProjetoCard({projeto}) {
         <CardContent className={classes.cardContent}>
           {/*<Typography gutterBottom variant="h5" component="h2">{nome}</Typography>*/}
           <Typography>{BULLET} {getTipoText(tipo)}</Typography>
-          <Typography>{BULLET} {cidade}</Typography>
+          <Typography>{BULLET} {cidade}/{estado}</Typography>
           <Typography>{BULLET} {area.toFixed(2).replace('.',',')} m²</Typography>
           <Typography>{BULLET} {pavimentos && (pavimentos === 1 ? 'Térreo' : `${pavimentos} pavimentos`)}</Typography>
           <Typography>{apartamentos && `${BULLET} ${apartamentos} apartamentos`}</Typography>
