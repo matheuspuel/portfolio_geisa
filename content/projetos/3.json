@@ -1,0 +1,29 @@
+{
+  "imagens": [
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436339/portfolio_geisa/projeto3/original/projeto-01.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436339/portfolio_geisa/projeto3/original/projeto-02.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436339/portfolio_geisa/projeto3/original/projeto-03.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436339/portfolio_geisa/projeto3/original/projeto-04.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436340/portfolio_geisa/projeto3/original/projeto-05.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436341/portfolio_geisa/projeto3/original/projeto-06.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436342/portfolio_geisa/projeto3/original/projeto-07.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436342/portfolio_geisa/projeto3/original/projeto-08.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436342/portfolio_geisa/projeto3/original/projeto-09.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436343/portfolio_geisa/projeto3/original/projeto-10.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436343/portfolio_geisa/projeto3/original/projeto-11.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436343/portfolio_geisa/projeto3/original/projeto-12.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436344/portfolio_geisa/projeto3/original/projeto-13.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436345/portfolio_geisa/projeto3/original/projeto-14.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436345/portfolio_geisa/projeto3/original/projeto-15.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436345/portfolio_geisa/projeto3/original/projeto-16.png"
+  ],
+  "cidade": "Brusque",
+  "pavimentos": 1,
+  "estado": "SC",
+  "data": "19/02/2020",
+  "area": 211.88,
+  "capa": "https://res.cloudinary.com/mmpcloud/image/upload/v1607436338/portfolio_geisa/projeto3/capa.jpg",
+  "pdf": "https://res.cloudinary.com/mmpcloud/image/upload/v1607436346/portfolio_geisa/projeto3/projeto.pdf",
+  "tipo": "RU",
+  "numero": 3
+}
