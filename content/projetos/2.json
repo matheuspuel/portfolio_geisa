@@ -1,0 +1,30 @@
+{
+  "imagens": [
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436322/portfolio_geisa/projeto2/original/projeto-01.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436322/portfolio_geisa/projeto2/original/projeto-02.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436323/portfolio_geisa/projeto2/original/projeto-03.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436324/portfolio_geisa/projeto2/original/projeto-04.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436325/portfolio_geisa/projeto2/original/projeto-05.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436325/portfolio_geisa/projeto2/original/projeto-06.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436325/portfolio_geisa/projeto2/original/projeto-07.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436326/portfolio_geisa/projeto2/original/projeto-08.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436326/portfolio_geisa/projeto2/original/projeto-09.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436327/portfolio_geisa/projeto2/original/projeto-10.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436327/portfolio_geisa/projeto2/original/projeto-11.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436327/portfolio_geisa/projeto2/original/projeto-12.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436327/portfolio_geisa/projeto2/original/projeto-13.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436328/portfolio_geisa/projeto2/original/projeto-14.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436328/portfolio_geisa/projeto2/original/projeto-15.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436329/portfolio_geisa/projeto2/original/projeto-16.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436329/portfolio_geisa/projeto2/original/projeto-17.png"
+  ],
+  "cidade": "Brusque",
+  "pavimentos": 2,
+  "estado": "SC",
+  "data": "19/12/2019",
+  "area": 308.63,
+  "capa": "https://res.cloudinary.com/mmpcloud/image/upload/v1607436321/portfolio_geisa/projeto2/capa.png",
+  "pdf": "https://res.cloudinary.com/mmpcloud/image/upload/v1607436333/portfolio_geisa/projeto2/projeto.pdf",
+  "tipo": "RM",
+  "numero": 2
+}
