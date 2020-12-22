@@ -1,0 +1,31 @@
+{
+  "imagens": [
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436375/portfolio_geisa/projeto6/original/projeto-01.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436375/portfolio_geisa/projeto6/original/projeto-02.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436375/portfolio_geisa/projeto6/original/projeto-03.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436376/portfolio_geisa/projeto6/original/projeto-04.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436376/portfolio_geisa/projeto6/original/projeto-05.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436377/portfolio_geisa/projeto6/original/projeto-06.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436378/portfolio_geisa/projeto6/original/projeto-07.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436379/portfolio_geisa/projeto6/original/projeto-08.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436379/portfolio_geisa/projeto6/original/projeto-09.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436379/portfolio_geisa/projeto6/original/projeto-10.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436379/portfolio_geisa/projeto6/original/projeto-11.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436379/portfolio_geisa/projeto6/original/projeto-12.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436380/portfolio_geisa/projeto6/original/projeto-13.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436381/portfolio_geisa/projeto6/original/projeto-14.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436381/portfolio_geisa/projeto6/original/projeto-15.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436381/portfolio_geisa/projeto6/original/projeto-16.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436382/portfolio_geisa/projeto6/original/projeto-17.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436382/portfolio_geisa/projeto6/original/projeto-18.png"
+  ],
+  "cidade": "São João Batista",
+  "pavimentos": 2,
+  "estado": "SC",
+  "data": "17/07/2020",
+  "area": 260,
+  "capa": "https://res.cloudinary.com/mmpcloud/image/upload/v1607436374/portfolio_geisa/projeto6/capa.png",
+  "pdf": "https://res.cloudinary.com/mmpcloud/image/upload/v1607436383/portfolio_geisa/projeto6/projeto.pdf",
+  "tipo": "RU",
+  "numero": 6
+}
