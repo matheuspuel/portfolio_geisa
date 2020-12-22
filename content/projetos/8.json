@@ -1,0 +1,27 @@
+{
+  "imagens": [
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436400/portfolio_geisa/projeto8/original/projeto-01.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436400/portfolio_geisa/projeto8/original/projeto-02.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436401/portfolio_geisa/projeto8/original/projeto-03.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436401/portfolio_geisa/projeto8/original/projeto-04.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436400/portfolio_geisa/projeto8/original/projeto-05.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436402/portfolio_geisa/projeto8/original/projeto-06.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436403/portfolio_geisa/projeto8/original/projeto-07.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436402/portfolio_geisa/projeto8/original/projeto-08.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436403/portfolio_geisa/projeto8/original/projeto-09.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436403/portfolio_geisa/projeto8/original/projeto-10.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436404/portfolio_geisa/projeto8/original/projeto-11.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436404/portfolio_geisa/projeto8/original/projeto-12.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436405/portfolio_geisa/projeto8/original/projeto-13.png",
+    "https://res.cloudinary.com/mmpcloud/image/upload/v1607436405/portfolio_geisa/projeto8/original/projeto-14.png"
+  ],
+  "cidade": "Brusque",
+  "pavimentos": 2,
+  "estado": "SC",
+  "data": "17/09/2020",
+  "area": 284.12,
+  "capa": "https://res.cloudinary.com/mmpcloud/image/upload/v1607436406/portfolio_geisa/projeto8/projeto.pdf",
+  "pdf": "https://res.cloudinary.com/mmpcloud/image/upload/v1607436406/portfolio_geisa/projeto8/projeto.pdf",
+  "tipo": "RU",
+  "numero": 8
+}
